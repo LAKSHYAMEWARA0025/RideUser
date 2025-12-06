@@ -75,3 +75,8 @@ Validation (Jakarta)
 Lombok (optional)
 
 This Ride Sharing backend provides a complete set of REST APIs for user and driver interactions using secure JWT authentication. Users and drivers can register and log in using the /api/auth/register and /api/auth/login endpoints, with passwords encrypted and JWT tokens issued upon successful login. A user with the ROLE_USER role can create a new ride request through the /api/v1/rides API, view their own ride history using /api/v1/user/rides, and later complete a ride via /api/v1/rides/{rideId}/complete. Drivers with the ROLE_DRIVER role can view all pending ride requests using /api/v1/driver/rides/requests and accept a specific ride using /api/v1/driver/rides/{rideId}/accept, after which the ride is assigned to them and marked as accepted. Both users and drivers can complete the accepted ride through the shared completion endpoint. All APIs are protected using JWT tokens sent in the Authorization: Bearer <token> header, and robust validation plus global exception handling ensures clear error messages and consistent behavior across the application.
+
+# Setup Instructions
+1. Clone the repository
+2. Add your credentials in application.properties
+3. Run the Application
